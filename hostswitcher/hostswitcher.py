@@ -37,6 +37,8 @@ def call_editor(fpath):
 class MainFrame(wx.Frame):
     def __init__(self, *args, **kwds):
         wx.Frame.__init__(self, *args, **kwds)
+        self.icon = wx.Icon("/usr/share/icons/hicolor/128x128/apps/switch-icon.png", wx.BITMAP_TYPE_PNG)
+        self.SetIcon(self.icon)
         with open(CurrentHosts, "rb") as fp:
             self.current = fp.read()
         self.all_hosts = get_all_hosts()
@@ -159,8 +161,7 @@ class MainApp(wx.App):
         frame.Show()
         return True
 
-
-if __name__ == "__main__":
+def main():
     try:
         if not os.path.exists(DataPath):
             os.makedirs(DataPath)
@@ -174,3 +175,7 @@ if __name__ == "__main__":
         app.MainLoop()
     except Exception, e:
         print e
+
+if __name__ == "__main__":
+    main()
+

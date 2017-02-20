@@ -13,3 +13,8 @@
 *.pid
 *.pyc
 *.conf
+
+# ignore dirs
+hostswitcher.egg-info
+dist
+build
