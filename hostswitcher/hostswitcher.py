@@ -27,7 +27,6 @@ def call_editor(fpath):
     cmd = r'%s %s'
     try:
         p = Popen(cmd % (Editor, fpath), shell = True)
-        p.wait()
         result = True
     except Exception, e:
         print e
@@ -178,4 +177,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

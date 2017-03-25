@@ -2,6 +2,8 @@
 
 a GUI tool for linux to switch hosts configurations for different develop environments quickly
 
+![Alt text](/doc/hostswitcher.png?raw=true "hostswitcher")
+
 #Install & Run
 
 ```bash
@@ -16,5 +18,5 @@ sudo python ./setup.py install
 # run
 sudo hostswitcher
 
-# it use gedit as default editor, if you don't like it, you can change the hostswitcher file 'Editor = "gedit"' to any other editor
+# it use gedit as default editor, if you don't like it, you can change the hostswitcher file 'Editor = "gedit"' to any other editor easily
 ```
