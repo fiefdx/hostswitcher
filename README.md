@@ -1,10 +1,10 @@
-#hostswitcher
+# hostswitcher
 
 a GUI tool for linux to switch hosts configurations for different develop environments quickly
 
 ![Alt text](/doc/hostswitcher.png?raw=true "hostswitcher")
 
-#Install & Run
+# Install & Run
 
 ```bash
 # install wx
